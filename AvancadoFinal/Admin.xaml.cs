@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace AvancadoFinal
 {
     /// <summary>
-    /// Lógica interna para Utilizador.xaml
+    /// Lógica interna para Admin.xaml
     /// </summary>
-    public partial class Utilizador : Window
+    public partial class Admin : Window
     {
-        public Utilizador()
+        public Admin()
         {
             InitializeComponent();
-        }
-
-        private void AddTicketButton_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

@@ -1,0 +1,44 @@
+﻿<Window x:Class="AvancadoFinal.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AvancadoFinal"
+        mc:Ignorable="d"
+        Title="Admin" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Label Content="Filtrar por tipo de serviço:" Margin="5"/>
+            <ComboBox Name="FilterComboBox" Width="200" Margin="5">
+                <ComboBoxItem Content="Todos"/>
+                <ComboBoxItem Content="Hardware (HW)"/>
+                <ComboBoxItem Content="Software (SW)"/>
+            </ComboBox>
+            <Button Content="Filtrar" Click="FilterButton_Click" Margin="5"/>
+            <Button Content="Gerar Relatório" Click="GenerateReportButton_Click" Margin="5"/>
+        </StackPanel>
+        <DataGrid Name="AdminTicketsDataGrid" Grid.Row="1" AutoGenerateColumns="False" Margin="10" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                <DataGridTextColumn Header="Tipo de Serviço" Binding="{Binding ServiceType}" Width="150"/>
+                <DataGridTextColumn Header="Descrição" Binding="{Binding Description}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="100"/>
+                <DataGridTemplateColumn Header="Ações" Width="150">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Atender" Click="AttendButton_Click" Tag="{Binding Id}" Margin="2"/>
+                                <Button Content="Fechar" Click="CloseButton_Click" Tag="{Binding Id}" Margin="2"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
