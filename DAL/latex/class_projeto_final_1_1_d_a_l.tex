@@ -1,0 +1,83 @@
+\doxysection{Projeto\+Final.\+DAL Class Reference}
+\hypertarget{class_projeto_final_1_1_d_a_l}{}\label{class_projeto_final_1_1_d_a_l}\index{ProjetoFinal.DAL@{ProjetoFinal.DAL}}
+
+
+Classe de acesso a dados (Data Access Layer) para manipulação do banco de dados Ticket2\+Help.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_projeto_final_1_1_d_a_l_a71d45ede982e577943f390a2f3fafff1}{exec\+BD}} (string sql)
+\begin{DoxyCompactList}\small\item\em Executa uma instrução SQL no banco de dados. \end{DoxyCompactList}\item 
+static Data\+Table \mbox{\hyperlink{class_projeto_final_1_1_d_a_l_af6aff84016f196570cd032bcc2da8dd0}{Get\+User}} (string sql, Sql\+Parameter\mbox{[}$\,$\mbox{]} parameters)
+\begin{DoxyCompactList}\small\item\em Obtém um usuário do banco de dados com base na instrução SQL e parâmetros fornecidos. \end{DoxyCompactList}\item 
+static ? Data\+Table \mbox{\hyperlink{class_projeto_final_1_1_d_a_l_a6098863cd674b5110ecc67881ffe51d5}{fill\+DGV}} (string sql)
+\begin{DoxyCompactList}\small\item\em Preenche um Data\+Table com os dados retornados pela instrução SQL fornecida. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe de acesso a dados (Data Access Layer) para manipulação do banco de dados Ticket2\+Help. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_projeto_final_1_1_d_a_l_a71d45ede982e577943f390a2f3fafff1}\index{ProjetoFinal.DAL@{ProjetoFinal.DAL}!execBD@{execBD}}
+\index{execBD@{execBD}!ProjetoFinal.DAL@{ProjetoFinal.DAL}}
+\doxysubsubsection{\texorpdfstring{execBD()}{execBD()}}
+{\footnotesize\ttfamily \label{class_projeto_final_1_1_d_a_l_a71d45ede982e577943f390a2f3fafff1} 
+static bool Projeto\+Final.\+DAL.\+exec\+BD (\begin{DoxyParamCaption}\item[{string}]{sql}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Executa uma instrução SQL no banco de dados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & Instrução SQL a ser executada.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna verdadeiro se a execução foi bem-\/sucedida, caso contrário, falso.
+\end{DoxyReturn}
+\Hypertarget{class_projeto_final_1_1_d_a_l_a6098863cd674b5110ecc67881ffe51d5}\index{ProjetoFinal.DAL@{ProjetoFinal.DAL}!fillDGV@{fillDGV}}
+\index{fillDGV@{fillDGV}!ProjetoFinal.DAL@{ProjetoFinal.DAL}}
+\doxysubsubsection{\texorpdfstring{fillDGV()}{fillDGV()}}
+{\footnotesize\ttfamily \label{class_projeto_final_1_1_d_a_l_a6098863cd674b5110ecc67881ffe51d5} 
+static ? Data\+Table Projeto\+Final.\+DAL.\+fill\+DGV (\begin{DoxyParamCaption}\item[{string}]{sql}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Preenche um Data\+Table com os dados retornados pela instrução SQL fornecida. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & Instrução SQL para obter os dados.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um Data\+Table contendo os dados, ou null se ocorrer um erro.
+\end{DoxyReturn}
+\Hypertarget{class_projeto_final_1_1_d_a_l_af6aff84016f196570cd032bcc2da8dd0}\index{ProjetoFinal.DAL@{ProjetoFinal.DAL}!GetUser@{GetUser}}
+\index{GetUser@{GetUser}!ProjetoFinal.DAL@{ProjetoFinal.DAL}}
+\doxysubsubsection{\texorpdfstring{GetUser()}{GetUser()}}
+{\footnotesize\ttfamily \label{class_projeto_final_1_1_d_a_l_af6aff84016f196570cd032bcc2da8dd0} 
+static Data\+Table Projeto\+Final.\+DAL.\+Get\+User (\begin{DoxyParamCaption}\item[{string}]{sql}{, }\item[{Sql\+Parameter\mbox{[}$\,$\mbox{]}}]{parameters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém um usuário do banco de dados com base na instrução SQL e parâmetros fornecidos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sql} & Instrução SQL para obter o usuário.\\
+\hline
+{\em parameters} & Parâmetros SQL para a consulta.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um Data\+Table contendo os dados do usuário, ou null se ocorrer um erro.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+DAL.\+cs\end{DoxyCompactItemize}

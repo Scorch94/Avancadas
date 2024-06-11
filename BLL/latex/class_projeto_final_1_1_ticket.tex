@@ -1,0 +1,135 @@
+\doxysection{Projeto\+Final.\+Ticket Class Reference}
+\hypertarget{class_projeto_final_1_1_ticket}{}\label{class_projeto_final_1_1_ticket}\index{ProjetoFinal.Ticket@{ProjetoFinal.Ticket}}
+
+
+Representa um ticket com detalhes de criação, modificação, colaborador, serviço, estado e descrição.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_projeto_final_1_1_ticket_a25509d64f071ac28d7c3465205dbf3a0}\label{class_projeto_final_1_1_ticket_a25509d64f071ac28d7c3465205dbf3a0} 
+{\bfseries Ticket} ()
+\begin{DoxyCompactList}\small\item\em Inicializa uma nova instância da classe \doxylink{class_projeto_final_1_1_ticket}{Ticket}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_projeto_final_1_1_ticket_aa915722ccfe6d6b769f83f439748dc49}{Ticket}} (int id, Date\+Time hora\+\_\+criacao, Date\+Time hora\+\_\+modificacao, string colaborador, string servico, string estado, string descricao)
+\begin{DoxyCompactList}\small\item\em Inicializa uma nova instância da classe \doxylink{class_projeto_final_1_1_ticket}{Ticket} com todos os parâmetros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_projeto_final_1_1_ticket_a0ef083f754a55372e78e12579c51539a}{Ticket}} (string servico, string descricao)
+\begin{DoxyCompactList}\small\item\em Inicializa uma nova instância da classe \doxylink{class_projeto_final_1_1_ticket}{Ticket} com serviço e descrição. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_projeto_final_1_1_ticket_a56978858bd208c78b6b6c9321a5f508e}{Ticket}} (int id, string servico, string descricao)
+\begin{DoxyCompactList}\small\item\em Inicializa uma nova instância da classe \doxylink{class_projeto_final_1_1_ticket}{Ticket} com identificador, serviço e descrição. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_projeto_final_1_1_ticket_a3eb20b2dc19137838e563dcd11bef366}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Retorna uma string que representa o objeto \doxylink{class_projeto_final_1_1_ticket}{Ticket}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_projeto_final_1_1_ticket_a3da6ade0924795b486d158614a9067ce}\label{class_projeto_final_1_1_ticket_a3da6ade0924795b486d158614a9067ce} 
+int? {\bfseries Id} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Identificador do ticket. \end{DoxyCompactList}\item 
+\Hypertarget{class_projeto_final_1_1_ticket_a6d2d0130eb5c7b03c59eec6039e5d1e9}\label{class_projeto_final_1_1_ticket_a6d2d0130eb5c7b03c59eec6039e5d1e9} 
+Date\+Time {\bfseries Hora\+\_\+criacao} = Date\+Time.\+Now\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Data e hora de criação do ticket. \end{DoxyCompactList}\item 
+\Hypertarget{class_projeto_final_1_1_ticket_a12aa46b4a2de8c20b51682cfcda169e5}\label{class_projeto_final_1_1_ticket_a12aa46b4a2de8c20b51682cfcda169e5} 
+Date\+Time? {\bfseries Hora\+\_\+modificacao} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Data e hora da última modificação do ticket. \end{DoxyCompactList}\item 
+\Hypertarget{class_projeto_final_1_1_ticket_a0b1d32714d6c73cf120fe4c89296001b}\label{class_projeto_final_1_1_ticket_a0b1d32714d6c73cf120fe4c89296001b} 
+string? {\bfseries Colaborador} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Nome do colaborador responsável pelo ticket. \end{DoxyCompactList}\item 
+\Hypertarget{class_projeto_final_1_1_ticket_a565884e7af838ce88cd4e4a52fba3be0}\label{class_projeto_final_1_1_ticket_a565884e7af838ce88cd4e4a52fba3be0} 
+string? {\bfseries Servico} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Tipo de serviço do ticket. \end{DoxyCompactList}\item 
+\Hypertarget{class_projeto_final_1_1_ticket_a391afa1c050ec5a18d759c406939baa1}\label{class_projeto_final_1_1_ticket_a391afa1c050ec5a18d759c406939baa1} 
+string? {\bfseries Estado} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Estado atual do ticket. \end{DoxyCompactList}\item 
+\Hypertarget{class_projeto_final_1_1_ticket_afe9651c944bff6fda1a0b82231f083e7}\label{class_projeto_final_1_1_ticket_afe9651c944bff6fda1a0b82231f083e7} 
+string? {\bfseries Descricao} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Descrição detalhada do ticket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa um ticket com detalhes de criação, modificação, colaborador, serviço, estado e descrição. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_projeto_final_1_1_ticket_aa915722ccfe6d6b769f83f439748dc49}\index{ProjetoFinal.Ticket@{ProjetoFinal.Ticket}!Ticket@{Ticket}}
+\index{Ticket@{Ticket}!ProjetoFinal.Ticket@{ProjetoFinal.Ticket}}
+\doxysubsubsection{\texorpdfstring{Ticket()}{Ticket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_projeto_final_1_1_ticket_aa915722ccfe6d6b769f83f439748dc49} 
+Projeto\+Final.\+Ticket.\+Ticket (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{Date\+Time}]{hora\+\_\+criacao}{, }\item[{Date\+Time}]{hora\+\_\+modificacao}{, }\item[{string}]{colaborador}{, }\item[{string}]{servico}{, }\item[{string}]{estado}{, }\item[{string}]{descricao}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa uma nova instância da classe \doxylink{class_projeto_final_1_1_ticket}{Ticket} com todos os parâmetros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador do ticket.\\
+\hline
+{\em hora\+\_\+criacao} & Data e hora de criação do ticket.\\
+\hline
+{\em hora\+\_\+modificacao} & Data e hora da última modificação do ticket.\\
+\hline
+{\em colaborador} & Nome do colaborador responsável pelo ticket.\\
+\hline
+{\em servico} & Tipo de serviço do ticket.\\
+\hline
+{\em estado} & Estado atual do ticket.\\
+\hline
+{\em descricao} & Descrição detalhada do ticket.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_projeto_final_1_1_ticket_a0ef083f754a55372e78e12579c51539a}\index{ProjetoFinal.Ticket@{ProjetoFinal.Ticket}!Ticket@{Ticket}}
+\index{Ticket@{Ticket}!ProjetoFinal.Ticket@{ProjetoFinal.Ticket}}
+\doxysubsubsection{\texorpdfstring{Ticket()}{Ticket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_projeto_final_1_1_ticket_a0ef083f754a55372e78e12579c51539a} 
+Projeto\+Final.\+Ticket.\+Ticket (\begin{DoxyParamCaption}\item[{string}]{servico}{, }\item[{string}]{descricao}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa uma nova instância da classe \doxylink{class_projeto_final_1_1_ticket}{Ticket} com serviço e descrição. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em servico} & Tipo de serviço do ticket.\\
+\hline
+{\em descricao} & Descrição detalhada do ticket.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_projeto_final_1_1_ticket_a56978858bd208c78b6b6c9321a5f508e}\index{ProjetoFinal.Ticket@{ProjetoFinal.Ticket}!Ticket@{Ticket}}
+\index{Ticket@{Ticket}!ProjetoFinal.Ticket@{ProjetoFinal.Ticket}}
+\doxysubsubsection{\texorpdfstring{Ticket()}{Ticket()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_projeto_final_1_1_ticket_a56978858bd208c78b6b6c9321a5f508e} 
+Projeto\+Final.\+Ticket.\+Ticket (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{string}]{servico}{, }\item[{string}]{descricao}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa uma nova instância da classe \doxylink{class_projeto_final_1_1_ticket}{Ticket} com identificador, serviço e descrição. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador do ticket.\\
+\hline
+{\em servico} & Tipo de serviço do ticket.\\
+\hline
+{\em descricao} & Descrição detalhada do ticket.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_projeto_final_1_1_ticket_a3eb20b2dc19137838e563dcd11bef366}\index{ProjetoFinal.Ticket@{ProjetoFinal.Ticket}!ToString@{ToString}}
+\index{ToString@{ToString}!ProjetoFinal.Ticket@{ProjetoFinal.Ticket}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_projeto_final_1_1_ticket_a3eb20b2dc19137838e563dcd11bef366} 
+override string Projeto\+Final.\+Ticket.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retorna uma string que representa o objeto \doxylink{class_projeto_final_1_1_ticket}{Ticket}. 
+
+\begin{DoxyReturn}{Returns}
+Uma string que representa o ticket.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Ticket.\+cs\end{DoxyCompactItemize}
