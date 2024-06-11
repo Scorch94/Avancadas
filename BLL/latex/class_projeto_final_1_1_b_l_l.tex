@@ -1,0 +1,147 @@
+\doxysection{Projeto\+Final.\+BLL Class Reference}
+\hypertarget{class_projeto_final_1_1_b_l_l}{}\label{class_projeto_final_1_1_b_l_l}\index{ProjetoFinal.BLL@{ProjetoFinal.BLL}}
+
+
+Classe de lógica de negócios (Business Logic Layer) para manipulação de usuários e tickets.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_projeto_final_1_1_b_l_l_a84a6325a0fb4398bcfffacdd76948ffd}{Insert\+Login}} (string username, string password, string tipo)
+\begin{DoxyCompactList}\small\item\em Insere um novo login de usuário no banco de dados. \end{DoxyCompactList}\item 
+static ? \mbox{\hyperlink{class_projeto_final_1_1_user}{User}} \mbox{\hyperlink{class_projeto_final_1_1_b_l_l_a96c97fd1191003b872583bcbd5a468a3}{Aceder}} (string username, string password)
+\begin{DoxyCompactList}\small\item\em Acede um usuário no banco de dados. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_projeto_final_1_1_b_l_l_ada8a522b6c99e073d987c2f2109084d7}{Insert\+Ticket}} (string servico, string descricao)
+\begin{DoxyCompactList}\small\item\em Insere um novo ticket no banco de dados. \end{DoxyCompactList}\item 
+static ? Data\+Table \mbox{\hyperlink{class_projeto_final_1_1_b_l_l_aa658f370de9c791dd17b29e6aa7980c4}{Full\+Tickets}} ()
+\begin{DoxyCompactList}\small\item\em Obtém todos os tickets associados ao colaborador atualmente logado. \end{DoxyCompactList}\item 
+static ? Data\+Table \mbox{\hyperlink{class_projeto_final_1_1_b_l_l_adbb692d0e70a88d5d74981aa9abdc2e6}{Full\+Tickets\+Adm}} ()
+\begin{DoxyCompactList}\small\item\em Obtém todos os tickets com estado \textquotesingle{}por\+Atender\textquotesingle{} ou \textquotesingle{}em\+Atendimento\textquotesingle{}. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_projeto_final_1_1_b_l_l_a545df6c65adb1e4df083603c11232d44}{Mudar\+Ticket}} (string estado, string id\+\_\+mod)
+\begin{DoxyCompactList}\small\item\em Atualiza o estado de um ticket no banco de dados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_projeto_final_1_1_b_l_l_a1f4dc1da7630a8966b30cb64b2b7b110}\label{class_projeto_final_1_1_b_l_l_a1f4dc1da7630a8966b30cb64b2b7b110} 
+static string {\bfseries colaborador}
+\begin{DoxyCompactList}\small\item\em Nome do colaborador atualmente logado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe de lógica de negócios (Business Logic Layer) para manipulação de usuários e tickets. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_projeto_final_1_1_b_l_l_a96c97fd1191003b872583bcbd5a468a3}\index{ProjetoFinal.BLL@{ProjetoFinal.BLL}!Aceder@{Aceder}}
+\index{Aceder@{Aceder}!ProjetoFinal.BLL@{ProjetoFinal.BLL}}
+\doxysubsubsection{\texorpdfstring{Aceder()}{Aceder()}}
+{\footnotesize\ttfamily \label{class_projeto_final_1_1_b_l_l_a96c97fd1191003b872583bcbd5a468a3} 
+static ? \mbox{\hyperlink{class_projeto_final_1_1_user}{User}} Projeto\+Final.\+BLL.\+Aceder (\begin{DoxyParamCaption}\item[{string}]{username}{, }\item[{string}]{password}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Acede um usuário no banco de dados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & Nome de usuário.\\
+\hline
+{\em password} & Senha do usuário.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um objeto \doxylink{class_projeto_final_1_1_user}{User} se encontrado, caso contrário, null.
+\end{DoxyReturn}
+\Hypertarget{class_projeto_final_1_1_b_l_l_aa658f370de9c791dd17b29e6aa7980c4}\index{ProjetoFinal.BLL@{ProjetoFinal.BLL}!FullTickets@{FullTickets}}
+\index{FullTickets@{FullTickets}!ProjetoFinal.BLL@{ProjetoFinal.BLL}}
+\doxysubsubsection{\texorpdfstring{FullTickets()}{FullTickets()}}
+{\footnotesize\ttfamily \label{class_projeto_final_1_1_b_l_l_aa658f370de9c791dd17b29e6aa7980c4} 
+static ? Data\+Table Projeto\+Final.\+BLL.\+Full\+Tickets (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém todos os tickets associados ao colaborador atualmente logado. 
+
+\begin{DoxyReturn}{Returns}
+Um Data\+Table contendo os tickets, ou null se não houver tickets.
+\end{DoxyReturn}
+\Hypertarget{class_projeto_final_1_1_b_l_l_adbb692d0e70a88d5d74981aa9abdc2e6}\index{ProjetoFinal.BLL@{ProjetoFinal.BLL}!FullTicketsAdm@{FullTicketsAdm}}
+\index{FullTicketsAdm@{FullTicketsAdm}!ProjetoFinal.BLL@{ProjetoFinal.BLL}}
+\doxysubsubsection{\texorpdfstring{FullTicketsAdm()}{FullTicketsAdm()}}
+{\footnotesize\ttfamily \label{class_projeto_final_1_1_b_l_l_adbb692d0e70a88d5d74981aa9abdc2e6} 
+static ? Data\+Table Projeto\+Final.\+BLL.\+Full\+Tickets\+Adm (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Obtém todos os tickets com estado \textquotesingle{}por\+Atender\textquotesingle{} ou \textquotesingle{}em\+Atendimento\textquotesingle{}. 
+
+\begin{DoxyReturn}{Returns}
+Um Data\+Table contendo os tickets, ou null se não houver tickets.
+\end{DoxyReturn}
+\Hypertarget{class_projeto_final_1_1_b_l_l_a84a6325a0fb4398bcfffacdd76948ffd}\index{ProjetoFinal.BLL@{ProjetoFinal.BLL}!InsertLogin@{InsertLogin}}
+\index{InsertLogin@{InsertLogin}!ProjetoFinal.BLL@{ProjetoFinal.BLL}}
+\doxysubsubsection{\texorpdfstring{InsertLogin()}{InsertLogin()}}
+{\footnotesize\ttfamily \label{class_projeto_final_1_1_b_l_l_a84a6325a0fb4398bcfffacdd76948ffd} 
+static string Projeto\+Final.\+BLL.\+Insert\+Login (\begin{DoxyParamCaption}\item[{string}]{username}{, }\item[{string}]{password}{, }\item[{string}]{tipo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Insere um novo login de usuário no banco de dados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & Nome de usuário.\\
+\hline
+{\em password} & Senha do usuário.\\
+\hline
+{\em tipo} & Tipo de usuário.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uma string indicando o sucesso ou falha da operação.
+\end{DoxyReturn}
+\Hypertarget{class_projeto_final_1_1_b_l_l_ada8a522b6c99e073d987c2f2109084d7}\index{ProjetoFinal.BLL@{ProjetoFinal.BLL}!InsertTicket@{InsertTicket}}
+\index{InsertTicket@{InsertTicket}!ProjetoFinal.BLL@{ProjetoFinal.BLL}}
+\doxysubsubsection{\texorpdfstring{InsertTicket()}{InsertTicket()}}
+{\footnotesize\ttfamily \label{class_projeto_final_1_1_b_l_l_ada8a522b6c99e073d987c2f2109084d7} 
+static string Projeto\+Final.\+BLL.\+Insert\+Ticket (\begin{DoxyParamCaption}\item[{string}]{servico}{, }\item[{string}]{descricao}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Insere um novo ticket no banco de dados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em servico} & Tipo de serviço do ticket.\\
+\hline
+{\em descricao} & Descrição do ticket.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uma string indicando o sucesso ou falha da operação.
+\end{DoxyReturn}
+\Hypertarget{class_projeto_final_1_1_b_l_l_a545df6c65adb1e4df083603c11232d44}\index{ProjetoFinal.BLL@{ProjetoFinal.BLL}!MudarTicket@{MudarTicket}}
+\index{MudarTicket@{MudarTicket}!ProjetoFinal.BLL@{ProjetoFinal.BLL}}
+\doxysubsubsection{\texorpdfstring{MudarTicket()}{MudarTicket()}}
+{\footnotesize\ttfamily \label{class_projeto_final_1_1_b_l_l_a545df6c65adb1e4df083603c11232d44} 
+static string Projeto\+Final.\+BLL.\+Mudar\+Ticket (\begin{DoxyParamCaption}\item[{string}]{estado}{, }\item[{string}]{id\+\_\+mod}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Atualiza o estado de um ticket no banco de dados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em estado} & Novo estado do ticket.\\
+\hline
+{\em id\+\_\+mod} & ID do ticket a ser modificado.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uma string indicando o sucesso ou falha da operação.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+BLL.\+cs\end{DoxyCompactItemize}
