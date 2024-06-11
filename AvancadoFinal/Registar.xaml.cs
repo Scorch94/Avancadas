@@ -1,27 +1,45 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
-namespace AvancadoFinal
+namespace ProjetoFinal
 {
     /// <summary>
-    /// Lógica interna para Registar.xaml
+    /// Lógica interna para Registo.xaml
     /// </summary>
-    public partial class Registar : Window
+    public partial class Registo : Window
     {
-        public Registar()
+        /// <summary>
+        /// Inicializa uma nova instância da classe <see cref="Registo"/>.
+        /// </summary>
+        public Registo()
         {
             InitializeComponent();
+        }
+
+        /// <summary>
+        /// Manipulador de evento para o clique do botão de fechar.
+        /// </summary>
+        /// <param name="sender">Objeto que disparou o evento.</param>
+        /// <param name="e">Dados do evento de roteamento.</param>
+        private void btn_close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        /// <summary>
+        /// Manipulador de evento para o clique do botão de registrar.
+        /// </summary>
+        /// <param name="sender">Objeto que disparou o evento.</param>
+        /// <param name="e">Dados do evento de roteamento.</param>
+        private void btn_registar_Click(object sender, RoutedEventArgs e)
+        {
+            string username = txt_username.Text;
+            string password = txt_password.Text;
+            string tipo = combo_box.Text;
+
+            string msg = BLL.InsertLogin(username, password, tipo);
+            MessageBox.Show(msg);
         }
     }
 }

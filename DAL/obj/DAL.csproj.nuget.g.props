@@ -18,7 +18,4 @@
     <Import Project="$(NuGetPackageRoot)microsoft.testing.extensions.telemetry\1.2.1\buildTransitive\net6.0\Microsoft.Testing.Extensions.Telemetry.props" Condition="Exists('$(NuGetPackageRoot)microsoft.testing.extensions.telemetry\1.2.1\buildTransitive\net6.0\Microsoft.Testing.Extensions.Telemetry.props')" />
     <Import Project="$(NuGetPackageRoot)mstest.testadapter\3.4.3\build\net6.0\MSTest.TestAdapter.props" Condition="Exists('$(NuGetPackageRoot)mstest.testadapter\3.4.3\build\net6.0\MSTest.TestAdapter.props')" />
   </ImportGroup>
-  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_Web_WebView2 Condition=" '$(PkgMicrosoft_Web_WebView2)' == '' ">C:\Users\wrt\.nuget\packages\microsoft.web.webview2\1.0.864.35</PkgMicrosoft_Web_WebView2>
-  </PropertyGroup>
 </Project>
