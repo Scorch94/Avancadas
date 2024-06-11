@@ -1,41 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "Y:\\Programação Avançada\\AvancadoFinal\\AvancadoFinal\\AvancadoFinal.csproj": {}
+    "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\AvancadoFinal\\AvancadoFinal.csproj": {}
   },
   "projects": {
-    "Y:\\Programação Avançada\\AvancadoFinal\\AvancadoFinal\\AvancadoFinal.csproj": {
+    "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\AvancadoFinal\\AvancadoFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Y:\\Programação Avançada\\AvancadoFinal\\AvancadoFinal\\AvancadoFinal.csproj",
+        "projectUniqueName": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\AvancadoFinal\\AvancadoFinal.csproj",
         "projectName": "AvancadoFinal",
-        "projectPath": "Y:\\Programação Avançada\\AvancadoFinal\\AvancadoFinal\\AvancadoFinal.csproj",
-        "packagesPath": "C:\\Users\\a22205395\\.nuget\\packages\\",
-        "outputPath": "Y:\\Programação Avançada\\AvancadoFinal\\AvancadoFinal\\obj\\",
+        "projectPath": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\AvancadoFinal\\AvancadoFinal.csproj",
+        "packagesPath": "C:\\Users\\wrt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\AvancadoFinal\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\a22205395\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\wrt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\BLL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\BLL\\BLL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -47,6 +43,24 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.4.3, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.4.3, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -66,7 +80,157 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\BLL\\BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\BLL\\BLL.csproj",
+        "projectName": "BLL",
+        "projectPath": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\wrt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\wrt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\DAL\\DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.4.3, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.4.3, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\wrt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\wrt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.4.3, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.4.3, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

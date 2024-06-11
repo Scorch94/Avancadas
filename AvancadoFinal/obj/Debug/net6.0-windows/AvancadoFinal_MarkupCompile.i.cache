@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-Y:\Programação Avançada\AvancadoFinal\AvancadoFinal\obj\Debug\net6.0-windows\
+C:\Users\wrt\OneDrive\Documentos\GitHub\Avancadas\AvancadoFinal\obj\Debug\net6.0-windows\
 AvancadoFinal
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-Y:\Programação Avançada\AvancadoFinal\AvancadoFinal\App.xaml
-2131054718
+C:\Users\wrt\OneDrive\Documentos\GitHub\Avancadas\AvancadoFinal\App.xaml
+4-730491591
 
-61868489977
-194-1617825143
-Login.xaml;Utilizador.xaml;
+9-1019837493
+238-252756783
+Admin.xaml;MainWindow.xaml;Registar.xaml;Utilizador.xaml;
 
-True
+False
 
