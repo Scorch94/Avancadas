@@ -93,7 +93,7 @@ namespace ProjetoFinal {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AvancadoFinal;V1.0.0.0;component/utilizador.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ProjetoFinal;V1.0.0.0;component/utilizador.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Utilizador.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

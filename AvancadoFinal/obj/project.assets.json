@@ -3512,9 +3512,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\AvancadoFinal\\AvancadoFinal.csproj",
-      "projectName": "AvancadoFinal",
-      "projectPath": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\AvancadoFinal\\AvancadoFinal.csproj",
+      "projectUniqueName": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\AvancadoFinal\\ProjetoFinal.csproj",
+      "projectName": "ProjetoFinal",
+      "projectPath": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\AvancadoFinal\\ProjetoFinal.csproj",
       "packagesPath": "C:\\Users\\wrt\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\AvancadoFinal\\obj\\",
       "projectStyle": "PackageReference",

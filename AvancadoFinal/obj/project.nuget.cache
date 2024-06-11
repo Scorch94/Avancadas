@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E3onzO7EcOQdWJ+5SFscpJBznwFG3JZTrziyVRgiNXEBzSGpSZ/b4UMO7t5/S9Dy4dRWP4UkwqUzSJiV1MFUCw==",
+  "dgSpecHash": "1iKUqfH2lIHtrOjNL+cjp/V6Mie9gHC0tty+vtYCpqGLZw24vZH/yrzBpwovrVPglxE1L0ceWmQ/eVNLSSN8Tw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\AvancadoFinal\\AvancadoFinal.csproj",
+  "projectFilePath": "C:\\Users\\wrt\\OneDrive\\Documentos\\GitHub\\Avancadas\\AvancadoFinal\\ProjetoFinal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wrt\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\wrt\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",
